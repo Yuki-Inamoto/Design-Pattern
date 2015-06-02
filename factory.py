@@ -19,5 +19,9 @@ class Factory(metaclass=ABCMeta):
         pass
 
     @abstractmethod
+<<<<<<< HEAD
     def register_product(self, product):
+=======
+    def register_product(self, owner):
+>>>>>>> 453cc352229bfe9d037c3b73feb82af6a9e9d34f
         pass
