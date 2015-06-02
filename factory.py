@@ -15,9 +15,9 @@ class Factory(metaclass=ABCMeta):
         return product
 
     @abstractmethod
-    def create_product(self):
+    def create_product(self, owner):
         pass
 
     @abstractmethod
-    def register_product(self):
+    def register_product(self, owner):
         pass

@@ -13,4 +13,12 @@ class IDCard(Product):
     def get_owner(self):
         return self.owner
 
-class IDCard_factory(Factory):
+
+class IDCard_Factory(Factory):
+
+    def create_product(self, owner):
+        return IDCard_Factory(owner)
+
+    def register_product(self, owner):
+        pass
+
