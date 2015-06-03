@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from factory import Product, Factory
 
 
@@ -5,20 +6,19 @@ class IDCard(Product):
 
     def __init__(self, owner):
         self.owner = owner
-        print(owner + "‚ÌƒJ[ƒh‚ğì‚è‚Ü‚·")
+        print(owner + "ã®ã‚«ãƒ¼ãƒ‰ã‚’ä½œã‚Šã¾ã™")
 
     def use(self):
-        print(self.owner + "‚ÌƒJ[ƒh‚ğg‚¢‚Ü‚·")
+        print(self.owner + "ã®ã‚«ãƒ¼ãƒ‰ã‚’ä½¿ã„ã¾ã™")
 
     def get_owner(self):
         return self.owner
 
 
-<<<<<<< HEAD
 class IDCardFactory(Factory):
 
     def __init__(self):
-    	self.owners = []
+        self.owners = []
 
     def create_product(self, owner):
         return IDCard(owner)
@@ -28,13 +28,3 @@ class IDCardFactory(Factory):
 
     def get_owners(self):
     	return self.owners
-=======
-class IDCard_Factory(Factory):
-
-    def create_product(self, owner):
-        return IDCard_Factory(owner)
-
-    def register_product(self, owner):
-        pass
->>>>>>> 453cc352229bfe9d037c3b73feb82af6a9e9d34f
-
