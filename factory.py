@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from abc import ABCMeta, abstractmethod
 
 
@@ -19,5 +20,5 @@ class Factory(metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def register_product(self, owner):
+    def register_product(self, product):
         pass
